@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+class student
+{
+    public:
+    int id;
+    int age;
+
+    student(int id, int age)
+    {
+        this->id = id;
+        this->age = age;
+    }
+};
+
+student* fun()
+{
+    student* a = new student(55, 3);
+    return a;
+}
+int main()
+{
+    student* obj = fun();
+    cout<<obj->age<<endl<<obj->id;
+    return 0;
+}
